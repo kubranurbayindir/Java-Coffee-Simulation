@@ -4,5 +4,5 @@ import Entities.Customer;
 
 public interface ICustomerCheckService {
 	
-	    boolean customerCheckIfNull(Customer customer);
+	    boolean checkCustomerInformation(Customer customer);
 }
