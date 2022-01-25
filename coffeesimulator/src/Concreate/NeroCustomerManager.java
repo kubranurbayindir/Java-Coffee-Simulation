@@ -15,7 +15,7 @@ public class NeroCustomerManager extends BaseCustomerManager {
 	@Override
 	public void save(Customer customer) {	
 		
-		if (customerCheckService.CheckIfRealPerson(customer))
+		if (customerCheckService.checkCustomerInformation(customer))
         {
             System.out.println("Person Checked!");
         }else{
