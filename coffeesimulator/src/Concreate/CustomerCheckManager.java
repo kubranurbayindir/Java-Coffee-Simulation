@@ -5,7 +5,7 @@ import Entities.Customer;
 public class CustomerCheckManager implements ICustomerCheckService {
 
 	@Override
-	public boolean customerCheckIfEmpty(Customer customer) {
+	public boolean customerCheckIfNull(Customer customer) {
 		if (user != null && !user.getFirstName().isEmpty() && !user.getLastName().isEmpty()
 				&& !user.getDateOfBirth().isEmpty() && !user.getNationalityId().isEmpty()) {
 			return true;
